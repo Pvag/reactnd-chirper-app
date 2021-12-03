@@ -20,7 +20,6 @@ class NewTweet extends Component {
     e.preventDefault();
 
     const text = this.state.text;
-    console.log(text);
 
     const { dispatch, id } = this.props;
     dispatch(handleAddTweet(text, id));
